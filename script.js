@@ -5,6 +5,7 @@ frog.onclick = () => {
     if (frogBusy) return;
     frogBusy = true;
     frog.style.transform = 'rotate(360deg)';
+    new Audio('assets/coin.wav').play();
     setTimeout(_ => {
 	frog.classList.remove('transition');
 	requestAnimationFrame(_ => {
