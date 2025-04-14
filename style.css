@@ -2,8 +2,8 @@ body {
     text-align: center;
 }
 
+.frog.transition { transition: transform .45s ease; }
 .frog {
     font-size: 64px;
     text-align: center;
-    transition: .1s ease;
 }
