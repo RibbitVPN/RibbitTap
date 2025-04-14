@@ -3,9 +3,6 @@ body {
 }
 
 .frog {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    border-radius: 50%;
-    position: relative;
+    font-size: 64px;
+    text-align: center;
 }
