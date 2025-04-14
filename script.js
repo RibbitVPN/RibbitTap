@@ -1,5 +1,5 @@
 const frog = document.querySelector('div.frog');
-const viewer = document.getElementById('coin-viewer');
+const viewer = document.querySelector('p#coin-viewer');
 let frogBusy = false;
 let coin_counter = 0;
 let coin_price = 0.01; // dollars
@@ -9,8 +9,8 @@ frog.onclick = () => {
     frogBusy = true;
     frog.style.transform = 'rotate(360deg)';
     new Audio('assets/coin.wav').play();
-	coin_counter++;
-	viewer.innerHTML = "Ribbit Coins: "+ coin_counter;
+    coin_counter++;
+    viewer.innerText = `Ribbit Coins: ${coin_counter}`;
     setTimeout(_ => {
 	frog.classList.remove('transition');
 	requestAnimationFrame(_ => {
@@ -23,12 +23,4 @@ frog.onclick = () => {
     }, 450);
 };
 
-function withdraw() {
-	if (coin_counter <= 40) {
-		alert("Can't withdraw need atleast 40 coins");
-	} else {
-		let amount = coin_counter * coin_price;
-		coin_counter = 0;
-		alert("You successfully withdrawed: " + amount + " USD");
-	}
-}
+const withdraw = () => alert(`Failed to withdraw: you need at least ${coin_counter<40?40:coin_counter+1} ribbit coins`);
