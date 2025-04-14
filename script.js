@@ -1,3 +1,3 @@
-function Frog() {
+function frog() {
     console.log("click")
 }
