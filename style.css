@@ -5,4 +5,5 @@ body {
 .frog {
     font-size: 64px;
     text-align: center;
+    transition: .1s ease;
 }
