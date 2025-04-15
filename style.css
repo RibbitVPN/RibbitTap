@@ -4,10 +4,10 @@ body {
     color: white;
 }
 p {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 h1 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans";
     font-size: 64px;
 }
 .frog.transition { transition: transform .45s ease; }
