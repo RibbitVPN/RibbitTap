@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background-color: darkgreen;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
 }
 
 .frog.transition { transition: transform .45s ease; }
