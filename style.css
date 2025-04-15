@@ -1,10 +1,15 @@
 body {
     text-align: center;
     background-color: darkgreen;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: white;
 }
-
+p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 64px;
+}
 .frog.transition { transition: transform .45s ease; }
 .frog {
     font-size: 64px;
